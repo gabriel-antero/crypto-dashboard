@@ -1,4 +1,3 @@
-// app/components/SummaryCard.tsx
 import { FaCaretUp, FaCaretDown } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -15,7 +14,6 @@ interface SummaryCardProps {
 
 export default function SummaryCard({ title, coin }: SummaryCardProps) {
     if (!coin) {
-        // Mostra um esqueleto se os dados ainda não chegaram
         return (
             <div className="bg-gray-800 p-4 rounded-lg shadow-md animate-pulse">
                 <h2 className="text-lg font-semibold text-gray-400 mb-2">{title}</h2>

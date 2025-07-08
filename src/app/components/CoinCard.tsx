@@ -1,4 +1,3 @@
-// app/components/CoinCard.tsx
 import { FaCaretUp, FaCaretDown, FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -30,12 +29,9 @@ export default function CoinCard({ name, symbol, image, current_price, price_cha
 
             <Image src={image} alt={name} width={48} height={48} className="w-12 h-12 self-start" />
 
-            {/* Container principal para o texto, permitindo que os itens se empilhem */}
             <div className="flex-1">
-                {/* Linha 1: Nome da Moeda */}
                 <h3 className="text-xl font-bold">{name}</h3>
 
-                {/* Linha 2: Símbolo e Variação */}
                 <div className="flex items-center text-sm text-gray-400 mt-1">
                     <span className="font-bold">{symbol.toUpperCase()}</span>
                     <span className={`flex items-center font-semibold ml-4 ${priceChangeColor}`}>
@@ -44,7 +40,6 @@ export default function CoinCard({ name, symbol, image, current_price, price_cha
                     </span>
                 </div>
 
-                {/* Linha 3: Preço Atual */}
                 <p className="text-xl font-mono mt-2">
                     R$ {current_price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </p>

@@ -1,4 +1,3 @@
-// app/components/__tests__/SummaryCard.test.tsx
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import SummaryCard from '../SummaryCard'; // Ajuste o caminho se necessário

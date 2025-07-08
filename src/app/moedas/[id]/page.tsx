@@ -1,16 +1,13 @@
-// app/moedas/[id]/page.tsx
 "use client";
 
 import { useState, useEffect } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-// A interface da nossa página espera receber 'params', que contém o 'id' da URL
 type PageProps = {
     params: { id: string };
     searchParams?: { [key: string]: string | string[] | undefined };
 };
 
-// O tipo de dado que esperamos para o nosso gráfico
 type ChartData = {
     date: string;
     price: number;
@@ -19,7 +16,7 @@ type ChartData = {
 export default function CoinDetailPage({ params }: PageProps) {
     const [chartData, setChartData] = useState<ChartData[]>([]);
     const [loading, setLoading] = useState(true);
-    const coinId = params.id; // Pegando o ID da moeda a partir dos parâmetros da URL
+    const coinId = params.id;
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
@@ -28,8 +25,6 @@ export default function CoinDetailPage({ params }: PageProps) {
                 const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=brl&days=7`);
                 const data = await response.json();
 
-                // A API retorna um array de arrays: [[timestamp, price], ...].
-                // Precisamos formatá-lo para o formato que o Recharts espera: [{date: '...', price: ...}, ...]
                 if (!response.ok) {
                     throw new Error('Falha ao buscar os dados das moedas.');
                 }
@@ -49,7 +44,7 @@ export default function CoinDetailPage({ params }: PageProps) {
         }
 
         fetchChartData();
-    }, [coinId]); // O efeito depende do coinId, se ele mudar, a busca é refeita.
+    }, [coinId]);
 
     if (error) {
         return (
