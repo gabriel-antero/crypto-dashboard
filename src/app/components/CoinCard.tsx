@@ -1,5 +1,6 @@
 // app/components/CoinCard.tsx
 import { FaCaretUp, FaCaretDown, FaStar } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface CoinCardProps {
     id: string;
@@ -27,7 +28,7 @@ export default function CoinCard({ name, symbol, image, current_price, price_cha
                 <FaStar className={isFavorite ? 'text-yellow-400' : 'text-gray-500'} />
             </button>
 
-            <img src={image} alt={name} className="w-12 h-12 self-start" />
+            <Image src={image} alt={name} width={48} height={48} className="w-12 h-12 self-start" />
 
             {/* Container principal para o texto, permitindo que os itens se empilhem */}
             <div className="flex-1">

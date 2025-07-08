@@ -2,12 +2,13 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { AreaChart, Area, LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 // A interface da nossa página espera receber 'params', que contém o 'id' da URL
-interface DetailPageProps {
+type PageProps = {
     params: { id: string };
-}
+    searchParams?: { [key: string]: string | string[] | undefined };
+};
 
 // O tipo de dado que esperamos para o nosso gráfico
 type ChartData = {
@@ -15,7 +16,7 @@ type ChartData = {
     price: number;
 };
 
-export default function CoinDetailPage({ params }: DetailPageProps) {
+export default function CoinDetailPage({ params }: PageProps) {
     const [chartData, setChartData] = useState<ChartData[]>([]);
     const [loading, setLoading] = useState(true);
     const coinId = params.id; // Pegando o ID da moeda a partir dos parâmetros da URL
