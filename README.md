@@ -1,8 +1,5 @@
 # ✨ CryptoView Dashboard
 
-[Prévia do CryptoView Dashboard](https://imgur.com/a/ph9c3cK)
-
-
 ## 📖 Sobre o Projeto
 
 O CryptoView Dashboard é uma aplicação web interativa e responsiva construída para acompanhar o mercado de criptomoedas em tempo real. O projeto foi desenvolvido como uma forma de aplicar e solidificar conhecimentos avançados em desenvolvimento front-end, desde o consumo de APIs e gerenciamento de estado até a implementação de testes automatizados e uma experiência de usuário polida.
