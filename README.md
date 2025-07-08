@@ -1,6 +1,6 @@
 # ✨ CryptoView Dashboard
 
-![Prévia do CryptoView Dashboard](https://imgur.com/a/ph9c3cK)
+[Prévia do CryptoView Dashboard](https://imgur.com/a/ph9c3cK)
 
 
 ## 📖 Sobre o Projeto
