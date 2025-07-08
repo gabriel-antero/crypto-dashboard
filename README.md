@@ -1,13 +1,13 @@
 # ✨ CryptoView Dashboard
 
-![Prévia do CryptoView Dashboard]([https://imgur.com/a/ph9c3cK])
+![Prévia do CryptoView Dashboard](https://imgur.com/a/ph9c3cK)
 
 
 ## 📖 Sobre o Projeto
 
 O CryptoView Dashboard é uma aplicação web interativa e responsiva construída para acompanhar o mercado de criptomoedas em tempo real. O projeto foi desenvolvido como uma forma de aplicar e solidificar conhecimentos avançados em desenvolvimento front-end, desde o consumo de APIs e gerenciamento de estado até a implementação de testes automatizados e uma experiência de usuário polida.
 
-**Acesse a aplicação ao vivo:** [**https://crypto-dashboard-nine-teal.vercel.app/**]
+**Acesse a aplicação ao vivo:** **https://crypto-dashboard-nine-teal.vercel.app/**
 
 ---
 
@@ -48,7 +48,7 @@ Para rodar este projeto na sua máquina, siga os passos abaixo:
 
 ```bash
 # 1. Clone o repositório
-git clone [https://github.com/seu-usuario/crypto-dashboard.git](https://github.com/seu-usuario/crypto-dashboard.git)
+git clone https://github.com/seu-usuario/crypto-dashboard.git
 
 # 2. Navegue até a pasta do projeto
 cd crypto-dashboard
@@ -69,4 +69,4 @@ npm test
 Este projeto está sob a licença MIT.
 
 ## 📬 Contato
-Gabriel Antero - [LinkedIn]([https://www.linkedin.com/in/gabriel-antero/])
+Gabriel Antero - [LinkedIn](https://www.linkedin.com/in/gabriel-antero/)

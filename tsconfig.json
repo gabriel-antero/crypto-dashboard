@@ -33,8 +33,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "jest.config.mjs", // Adicione esta linha
-    "jest.setup.js" // Adicione esta linha
+    "jest.config.mjs",
+    "jest.setup.js",
+    "next.config.js",
+    "next.config.js"
   ],
   "exclude": [
     "node_modules"
